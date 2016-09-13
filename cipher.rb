@@ -3,15 +3,12 @@
 def ceasar (sentence, integer)
 	unaltered = sentence.split""
 	
-	
-
 	integer.times do
 		unaltered.each do |c|
 			c.next!
 			if c == "aa"
 				 c.chop!
 			end
-
 		end
 	end 
 	unaltered = unaltered.join("")
